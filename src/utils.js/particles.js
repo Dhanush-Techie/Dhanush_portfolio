@@ -1,4 +1,4 @@
-export default {
+export default particlesConfig = {
   background: {
     color: {
       value: "#1d1d1d", // Background color
