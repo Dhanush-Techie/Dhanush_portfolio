@@ -1,0 +1,66 @@
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem;
+  
+    .download-btn {
+      background-color: var(--yellow-theme-main-color);
+      color: #000;
+      font-weight: bold;
+      padding: 1.2rem 2.5rem;
+      border: none;
+      cursor: pointer;
+      margin-top: 2rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-size: 1.8rem;
+      border-radius: 8px;
+      animation: fadeIn 1s ease-in-out;
+  
+      &:hover {
+        background-color: white;
+        transform: scale(1.1); // Slight zoom effect
+      }
+    }
+  }
+  
+  // Animation for fade-in effect
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  // Responsive Design for Different Screens
+  @media screen and (max-width: 768px) {
+    .resume {
+      height: auto;
+      padding: 5rem 2rem;
+    }
+  
+    .download-btn {
+      font-size: 1.6rem;
+      padding: 1rem 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .resume {
+      height: auto;
+      padding: 4rem 1.5rem;
+    }
+  
+    .download-btn {
+      font-size: 1.4rem;
+      padding: 0.9rem 1.8rem;
+    }
+  }
+  
